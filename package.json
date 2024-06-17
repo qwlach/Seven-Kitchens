@@ -10,7 +10,8 @@
     "lint-staged": "lint-staged",
     "format": "prettier --write \"src/**/*.{ts,tsx,scss}\"",
     "formatjs": "prettier --write .eslintrc.js",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "commitlint": "commitlint --config commitlint.config.js -e -V"
   },
   "repository": {
     "type": "git",
@@ -29,6 +30,8 @@
     "@babel/preset-env": "^7.24.7",
     "@babel/preset-react": "^7.24.7",
     "@babel/preset-typescript": "^7.24.7",
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@typescript-eslint/eslint-plugin": "^7.13.0",
