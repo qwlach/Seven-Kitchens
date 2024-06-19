@@ -24,6 +24,13 @@ module.exports = {
   },
   plugins: ["react", "@typescript-eslint", "prettier"],
   rules: {
-    "prettier/prettier": "error"
+    "prettier/prettier": [
+      "error",
+      {
+        trailingComma: "none",
+        bracketSpacing: true,
+        parser: "flow"
+      }
+    ]
   }
 };
