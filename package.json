@@ -13,7 +13,7 @@
     "prepare": "husky install",
     "commitlint": "commitlint --config commitlint.config.js -e -V",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
