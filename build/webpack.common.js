@@ -7,7 +7,7 @@ module.exports = {
     filename: "static/js/[name].[chunkhash:8].js",
     path: path.resolve(__dirname, "../dist"),
     clean: true,
-    publicPath: "/"
+    publicPath: process.env.NODE_ENV === "local" ? "/" : "https:/qwlach.github.io/Seven-Kitchens/"
   },
   module: {
     rules: [
