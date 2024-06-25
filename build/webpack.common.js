@@ -5,7 +5,7 @@ module.exports = {
   entry: path.resolve(__dirname, "../src/index.tsx"),
   output: {
     filename: "static/js/[name].[chunkhash:8].js",
-    path: path.resolve(__dirname, "../docs"),
+    path: path.resolve(__dirname, "../dist"),
     clean: true,
     publicPath: "/"
   },

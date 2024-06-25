@@ -11,7 +11,9 @@
     "format": "prettier --write \"src/**/*.{ts,tsx,scss}\"",
     "formatjs": "prettier --write .eslintrc.js",
     "prepare": "husky install",
-    "commitlint": "commitlint --config commitlint.config.js -e -V"
+    "commitlint": "commitlint --config commitlint.config.js -e -V",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -23,7 +25,7 @@
   "bugs": {
     "url": "https://github.com/qwlach/Seven-Kitchens/issues"
   },
-  "homepage": "https://github.com/qwlach/Seven-Kitchens#readme",
+  "homepage": "https://qwlach.github.io/Seven-Kitchens",
   "devDependencies": {
     "@babel/core": "^7.24.7",
     "@babel/plugin-transform-runtime": "^7.24.7",
@@ -43,6 +45,7 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.1.3",
     "eslint-plugin-react": "^7.34.2",
+    "gh-pages": "^6.1.1",
     "globals": "^15.5.0",
     "html-webpack-plugin": "^5.6.0",
     "husky": "^8.0.0",
