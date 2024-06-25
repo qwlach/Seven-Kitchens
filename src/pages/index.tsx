@@ -12,9 +12,9 @@ function App() {
       <BrowserRouter>
         <Suspense fallback={<div></div>}>
           <Routes>
-            <Route path="/" element={<Home />}></Route>
-            <Route path="/menu" element={<Menu />}></Route>
-            <Route path="/menu/:id" element={<MenuDetail />}></Route>
+            <Route path="/Seven-Kitchens" element={<Home />}></Route>
+            <Route path="/Seven-Kitchens/menu" element={<Menu />}></Route>
+            <Route path="/Seven-Kitchens/menu/:id" element={<MenuDetail />}></Route>
           </Routes>
         </Suspense>
       </BrowserRouter>
