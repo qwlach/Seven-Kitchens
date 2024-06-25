@@ -30,7 +30,7 @@ module.exports = {
     extensions: [".ts", ".tsx", ".js", ".json"],
     alias: {
       "@": path.resolve(__dirname, "../src"),
-      appEnv: resolve("../src/env/" + process.env.NODE_ENV + ".js")
+      appEnv: path.resolve("../src/env/" + process.env.NODE_ENV + ".js")
     },
     // 缩小模块查找范围
     modules: [path.resolve(__dirname, "../src"), "node_modules"]
