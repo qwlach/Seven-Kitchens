@@ -11,7 +11,7 @@
     "strict": true /* Enable all strict type-checking options. */,
     "baseUrl": "./" /* Base directory to resolve non-absolute module names. */,
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["src/*"],
     } /* A series of entries which re-map imports to lookup locations relative to the 'baseUrl'. */,
     "esModuleInterop": true /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */,
     "moduleResolution": "node", // 用于选择模块解析策略 node/classic

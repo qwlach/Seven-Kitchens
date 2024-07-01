@@ -1,0 +1,38 @@
+.menu-detail-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  &-title {
+    height: 40px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  div {
+    line-height: 30px;
+    color: rgb(25, 27, 31);
+  }
+
+  &-content {
+    flex: 1;
+    padding: 16px;
+    overflow-y: auto;
+    width: 70%;
+    margin: 0 15%;
+    
+
+    .important-word {
+      font-size: 24px;
+      color: red;
+      font-weight: bold;
+    }
+
+    h3 {
+      margin: 12px 0;
+    }
+  }
+}

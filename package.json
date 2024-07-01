@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=local webpack server -c build/webpack.dev.js",
-    "build": "cross-env NODE_ENV=prod webpack -c build/webpack.prod.js",
+    "start": "cross-env NODE_ENV=local CONTENT_PATH='/' webpack server -c build/webpack.dev.js",
+    "build": "cross-env NODE_ENV=prod CONTENT_PATH='/Seven-Kitchens' webpack -c build/webpack.prod.js",
     "lint": "eslint --ext .ts --ext .tsx src",
     "lint-staged": "lint-staged",
     "format": "prettier --write \"src/**/*.{ts,tsx,scss}\"",
@@ -34,6 +34,7 @@
     "@babel/preset-typescript": "^7.24.7",
     "@commitlint/cli": "^19.3.0",
     "@commitlint/config-conventional": "^19.2.2",
+    "@types/node": "^20.14.9",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@typescript-eslint/eslint-plugin": "^7.13.0",

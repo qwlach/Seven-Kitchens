@@ -7,14 +7,18 @@ const Menu = lazy(() => import("./menu"));
 const MenuDetail = lazy(() => import("./menu-detail"));
 
 function App() {
+  console.log(process.env.contentPath, "1234567");
+
+  const prefix = process.env.contentPath;
+
   return (
     <Watermark content={"七小厨"} className="app-watermark-wrapper">
       <BrowserRouter>
         <Suspense fallback={<div></div>}>
           <Routes>
-            <Route path="/Seven-Kitchens" element={<Home />}></Route>
-            <Route path="/Seven-Kitchens/menu" element={<Menu />}></Route>
-            <Route path="/Seven-Kitchens/menu/:id" element={<MenuDetail />}></Route>
+            <Route path={prefix} element={<Home />}></Route>
+            <Route path={`${prefix}/menu`} element={<Menu />}></Route>
+            <Route path={`${prefix}/menu/:id`} element={<MenuDetail />}></Route>
           </Routes>
         </Suspense>
       </BrowserRouter>
