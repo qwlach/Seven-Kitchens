@@ -16,7 +16,7 @@ function App() {
 
   const handleClickMenu: MenuProps["onClick"] = (e) => {
     const key: string = e.key;
-    navegate(MENU_OBJ[key]);
+    navegate(`${prefix}${MENU_OBJ[key]}`);
   };
 
   return (
