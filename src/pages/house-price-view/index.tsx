@@ -1,9 +1,10 @@
 import React from "react";
+import { SYSTEM_CLS_PREFIX } from "@/const";
 import "./index.scss";
 
-const prefix = "menu-detail-wrapper";
+const prefix = `${SYSTEM_CLS_PREFIX}-house-price-view`;
 
-function MenuDetail() {
+function HousePriceView() {
   return (
     <div className={prefix}>
       <h2 className={`${prefix}-title`}>关于买房的看法（摘抄自知乎 左一）</h2>
@@ -108,4 +109,4 @@ function MenuDetail() {
   );
 }
 
-export default MenuDetail;
+export default HousePriceView;

@@ -1,6 +1,7 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import App from "@/pages";
+import { BrowserRouter } from "react-router-dom";
+import App from "@/app";
 import "./index.scss";
 
 const rootContainer = document.getElementById("root");
@@ -8,5 +9,9 @@ const rootContainer = document.getElementById("root");
 if (rootContainer) {
   const root = createRoot(rootContainer);
 
-  root.render(<App />);
+  root.render(
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  );
 }
