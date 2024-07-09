@@ -40,7 +40,7 @@ function App() {
             <Watermark content={"七小厨博客"} className="app-watermark-wrapper">
               <Suspense fallback={<div></div>}>
                 <Routes>
-                  <Route path={prefix} element={<div />} />
+                  <Route path={prefix} element={<PoisonousChickenSoup />} />
                   <Route
                     path={`${prefix}${MENU_OBJ["poisonous-chicken-soup"]}`}
                     element={<PoisonousChickenSoup />}
