@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=local CONTENT_PATH='/' webpack server -c build/webpack.dev.js",
+    "start": "cross-env NODE_ENV=local CONTENT_PATH='/Seven-Kitchens' webpack server -c build/webpack.dev.js",
     "build": "cross-env NODE_ENV=prod CONTENT_PATH='/Seven-Kitchens' webpack -c build/webpack.prod.js",
     "lint": "eslint --ext .ts --ext .tsx src",
     "lint-staged": "lint-staged",
