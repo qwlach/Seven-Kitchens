@@ -10,6 +10,7 @@ const prefix = process.env.contentPath;
 
 const PoisonousChickenSoup = lazy(() => import("../pages/poisonous-chicken-soup"));
 const HousePriceView = lazy(() => import("../pages/house-price-view"));
+const CatDaily = lazy(() => import("../pages/cat-daily"));
 
 function App() {
   const navegate = useNavigate();
@@ -28,7 +29,7 @@ function App() {
         <Sider collapsible theme="light">
           <Menu
             mode="inline"
-            defaultSelectedKeys={["poisonous-chicken-soup"]}
+            defaultSelectedKeys={[location.pathname.split("/").reverse()[0]]}
             defaultOpenKeys={["relaxing-moment"]}
             style={{ height: "100%", borderRight: 0 }}
             items={SYSTEM_ITEM_LIST}
@@ -45,6 +46,7 @@ function App() {
                     path={`${prefix}${MENU_OBJ["poisonous-chicken-soup"]}`}
                     element={<PoisonousChickenSoup />}
                   />
+                  <Route path={`${prefix}${MENU_OBJ["cat-daily"]}`} element={<CatDaily />} />
                   <Route
                     path={`${prefix}${MENU_OBJ["house-price-view"]}`}
                     element={<HousePriceView />}

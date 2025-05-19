@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <title>欢迎来到七小厨的博客</title>
+    <% if (htmlWebpackPlugin.options.buildEnv === 'prod') { %>
+      <script src="https://cdn-go.cn/aegis/aegis-sdk/latest/aegis.min.js"></script>
+	  <% } %>
+
   </head>
   <body>
     <div id="root"></div>

@@ -9,7 +9,8 @@ interface MenuInterface {
 export const SYSTEM_CLS_PREFIX = "seven-kitchens";
 export const MENU_OBJ: MenuInterface = {
   "poisonous-chicken-soup": "/relaxing-moment/poisonous-chicken-soup",
-  "house-price-view": "/article-excerpt/house-price-view"
+  "house-price-view": "/article-excerpt/house-price-view",
+  "cat-daily": "/relaxing-moment/cat-daily"
 };
 
 export const SYSTEM_ITEM_LIST = [
@@ -21,6 +22,10 @@ export const SYSTEM_ITEM_LIST = [
       {
         key: "poisonous-chicken-soup",
         label: "毒鸡汤"
+      },
+      {
+        key: "cat-daily",
+        label: "猫咪知识"
       }
     ]
   },

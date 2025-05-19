@@ -38,6 +38,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
+      buildEnv: "uat",
       template: path.resolve(__dirname, "../public/index.html"),
       favicon: path.resolve(__dirname, "../public/kitchen.png"),
       inject: "body",
